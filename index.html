@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myles</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/e076f0f8b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo-text spinning">Myles</h1>
+                <ul id="sidemenue">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenue()"></i>
+                </ul>
+
+                <i id="bars" class="fa-solid fa-bars" onclick="openmenue()"></i>
+
+            </nav>
+
+            <div class="header-text">
+                <p>Hi, I'm  <span >Myles Magopane </span></p>
+                <h1>I specialize in <span id="typed"></span> </h1>
+            </div>
+
+        </div>
+        
+    </div>
+<!------------------About-------------------->
+
+    <div id="about">
+        <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/image00004.jpeg">
+                    </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p class="about-para" >I'm currently working as a C#/VB fullstack developer since may 2022. I'm responsible for developing,
+                                maintaining  all web applications that are used internally and externally by various suppliers and customers.
+                                I believe in growth. As this industry is constantly evolving, I research and learn by trying to improve and
+                                implement new ideas into my work since the day I started. What motivates me is studying
+                                the greats before and try to do it better because I love and have passion in my profession.</p>
+                                
+                                <br>
+
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills');" >Skills</p>
+                                    <p class="tab-links" onclick="opentab('experience');">Experience</p>
+                                    <p class="tab-links" onclick="opentab('education');">Education</p>
+                                </div>
+
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>UI/UX</span><br>Desigining Web/App Interfaces</li>
+                                        <li><span>Web Development</span><br>Website and Application Development</li>
+                                        <li><span>App Development</span><br>Building Android/IOS Applications</li>
+                                        <li><span>Database Design</span><br>Developement and maintainance of Databaes and models</li>
+                                        <li><span>API's</span><br>Building restful api's to support clients needs</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span>Web Developer</span><br>FH Chamberlain <br> * 2022 - current</li>
+                                        <li><span>Back-End Developer</span><br>Informatics Communication Engagement Projects <br> * 2021</li>
+                                        <li><span>Front-End Developer</span><br>Desigining the user interface for mobile application <br> and front-end development <br>  * 2022</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span>National Diploma</span><br>Tshwane University of Technology 2016 - 2020</li>
+                                        <li><span>National Senior Certificate</span><br>Lyttelton Manor High 2008 - 2012</li>                                
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!------------------Services--------------------->
+      
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title" style="text-align: center;"> My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Developing complex web applications that interact with databases and provide dynamic user experiences.<br>
+                            Building the client-side (frontend) and server-side (backend) components of websites and applications.</p>
+                        <a href="#">More...</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-palette"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Detailed prototypes that include design elements (colors, typography, images). Tools like Figma,<br> 
+                            Adobe XD, and Sketch allow for more polished designs.<br>
+                            Creating clickable prototypes that simulate user interactions, providing a more realistic experience. <br>
+                            This helps in visualizing user flows and gathering feedback.
+                        </p>
+                        <a href="#">More...</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h2>Mobile Applications</h2>
+                        <p>creating software applications that run on mobile devices, such as smartphones and tablets.<br>
+                            For example, Native Apps are Developed specifically for one platform like iOS or Android <br> 
+                            using platform-specific languages (Swift for iOS, Kotlin/Java for Android).
+                            Cross-Platform Apps are built to work on multiple platforms using React or Flutter.
+                        </p>
+                        <a href="#">More...</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------Portfolio-------------------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title" style="text-align: center;">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                            <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
+                            <div class="layer">
+                                    <h3>Safety App</h3>
+                                    <p>This app is a basically for community users which allows user to report crime or suspicious activity. You may click the link to view the Mockups from Adobe XD Online.</p>
+                                    <a href=""><i class="fa-solid fa-link"></i></a>
+                                </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
+                        <div class="layer">
+                            <h3>Library System App</h3>
+                            <p>This app is basically a booking system to keep track of books you checked out and calculated the number of days before you return it back developed just to sharpen my Skills set. You may view the project on github by clicking this link.</p>
+                            <a href="https://github.com/mylesmagopane/Library-Application-System"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
+                        <div class="layer">
+                            <h3>Calculator App</h3>
+                            <p>This app is a basic Calculator i developed just to sharpen my Skills set. you may view it from clicking this link.</p>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
+                        <div class="layer">
+                            <h3>Email Design</h3>
+                            <p>This is an email design I did just to sharpen my skill set. you may view it from clicking this link.</p>
+                            <a href="https://mylesmagopane.github.io/Email_Design/Email%20Design/emailDesign.html"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    
+                                   
+                </div>
+            </div>
+        </div>      
+        <br>
+        <a href="/" class="btn">See More</a>
+        <br>
+         <!-- ----------------Contact------------------ -->
+        <br>
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title" >Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>mylesmagopane@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 0693511557</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/myles-magopane-1388611b1"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/mylesmagopane"><i class="fa-brands fa-github"></i></a>
+                        </div>
+
+                    
+                        
+                        <a href="pdf/Myles Magopane Resume 3.pdf" download class="btn">Download CV</a>
+                        
+                    </div>
+                    <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="text" name="Email" placeholder="Your Email">
+                    <textarea name="Message"  rows="6" placeholder="Type Your Message Here..."></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                   </form>                  
+                    </div>
+                    <div id="popup" class="popup-card">
+                            <p id="msg"></p>
+                         </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>This Website was developed by Myles Magopane </p>
+            </div>
+         </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        var typed = new Typed('#typed',{
+            strings : ["UI/IX Design","Web Development","Mobile Applications" +"","Software Development","Full Stack Development"],
+            typeSpeed: 150,
+            backSpeed : 150,
+            loop : true}   
+        );     
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");                          
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");                          
+            }
+            
+           event.currentTarget.classList.add("active-link");   
+           document.getElementById(tabname).classList.add("active-tab"); 
+        }
+    </script>
+
+    <script>
+        var sidemenue = document.getElementById("sidemenue");
+
+        var bars = document.getElementById("bars");
+
+        function openmenue(){
+            sidemenue.style.right = "0"
+              bars.style.display = "none" 
+        }
+
+        function closemenue(){
+             sidemenue.style.right = "-250px"
+            bars.style.display = "unset"          
+        }
+
+    </script>
+
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPsV3SMiCN72UgnKYsS_TfEvqOnYE3bZEEhEecgY0UhEurxEMpSnyFxVtkOdA61Px1IA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    const popup = document.getElementById("popup")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            popup.style.display = "unset"
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+                popup.style.display = "none"
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+
+</html>
