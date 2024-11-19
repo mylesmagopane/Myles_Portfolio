@@ -35,6 +35,7 @@
         </div>
         
     </div>
+
 <!------------------About-------------------->
 
     <div id="about">
@@ -139,22 +140,21 @@
                                 </div>
                     </div>
                     <div class="work">
+                        <img src="/images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
+                        <div class="layer">
+                            <h3>!chat</h3>
+                            <p>This app is basically a basic chat application for groups to hold discussions and planning. just to sharpen my Skills set. You may view the project on github by clicking this link.</p>
+                            <a href="https://ichat-ten.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
                         <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
                         <div class="layer">
                             <h3>Library System App</h3>
                             <p>This app is basically a booking system to keep track of books you checked out and calculated the number of days before you return it back developed just to sharpen my Skills set. You may view the project on github by clicking this link.</p>
                             <a href="https://github.com/mylesmagopane/Library-Application-System"><i class="fa-solid fa-link"></i></a>
                         </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
-                        <div class="layer">
-                            <h3>Calculator App</h3>
-                            <p>This app is a basic Calculator i developed just to sharpen my Skills set. you may view it from clicking this link.</p>
-                            <a href=""><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-
+                    </div>               
                     <div class="work">
                         <img src="images/man-hand-holding-apple-iphone-pro-max-ios.webp" alt="">
                         <div class="layer">
@@ -186,8 +186,6 @@
                             <a href="https://github.com/mylesmagopane"><i class="fa-brands fa-github"></i></a>
                         </div>
 
-                    
-                        
                         <a href="pdf/Myles Magopane Resume 3.pdf" download class="btn">Download CV</a>
                         
                     </div>
@@ -208,74 +206,18 @@
                 <p>This Website was developed by Myles Magopane </p>
             </div>
          </div>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents")
-
-        var typed = new Typed('#typed',{
-            strings : ["UI/IX Design","Web Development","Mobile Applications" +"","Software Development","Full Stack Development"],
-            typeSpeed: 150,
-            backSpeed : 150,
-            loop : true}   
-        );     
-        
-        function opentab (tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");                          
-            }
-
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");                          
-            }
-            
-           event.currentTarget.classList.add("active-link");   
-           document.getElementById(tabname).classList.add("active-tab"); 
-        }
-    </script>
-
-    <script>
-        var sidemenue = document.getElementById("sidemenue");
-
-        var bars = document.getElementById("bars");
-
-        function openmenue(){
-            sidemenue.style.right = "0"
-              bars.style.display = "none" 
-        }
-
-        function closemenue(){
-             sidemenue.style.right = "-250px"
-            bars.style.display = "unset"          
-        }
-
-    </script>
+         <script type="text/javascript" src="code.js"></script>
+         
+         <script type="text/javascript" src="code2.js"></script>
 
 <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPsV3SMiCN72UgnKYsS_TfEvqOnYE3bZEEhEecgY0UhEurxEMpSnyFxVtkOdA61Px1IA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    const popup = document.getElementById("popup")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            popup.style.display = "unset"
-            msg.innerHTML = "Message sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-                popup.style.display = "none"
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-    
+
+<script type="text/javascript" src="code3.js"></script>
+
+
 </body>
 
 </html>
